@@ -3,6 +3,7 @@ import React from 'react';
 import {Cursor, useTypewriter} from "react-simple-typewriter";
 import BackgroundCircles from "@/app/components/BackgroundCircles";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const Hero = () => {
@@ -19,8 +20,7 @@ const Hero = () => {
 
             className={'text-gray-200 mx-auto p-5 h-screen flex flex-col items-center justify-center space-y-8  text-center overflow-hidden  '}>
             <BackgroundCircles/>
-            <img src={'/me.jpg'} className={'rounded-full object-cover h-32 w-32 relative'}
-                 alt={'My profile image'}/>
+            <Image src='/me.jpg' className='rounded-full object-cover h-32 w-32 relative' alt={''}/>
 
 
             <h2 className={"pb-2 text-sm md:text-lg text-gray-500 tracking-[15px]  uppercase"}>Software

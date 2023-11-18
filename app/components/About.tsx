@@ -51,12 +51,12 @@ const About = (props: Props) => {
                     className={'underline decoration-primary/60'}>little</span> background</h3>
                 <p className={'text-base'}>Being a creative web designer and mobile developer is a thrilling journey
                     where innovation meets functionality. Crafting visually stunning and user-friendly interfaces for
-                    both web and mobile platforms requires a delicate balance between aesthetics and practicality. It's
+                    both web and mobile platforms requires a delicate balance between aesthetics and practicality. Its
                     about translating ideas into digital experiences that not only captivate users but also seamlessly
                     adapt to the ever-evolving technological landscape. This role demands a constant exploration of
                     design trends, coding languages, and user behaviors to stay ahead in delivering cutting-edge
                     solutions. The joy lies in turning concepts into interactive realities, ensuring that each pixel and
-                    line of code contributes to an engaging and cohesive digital ecosystem. It's a dynamic fusion of
+                    line of code contributes to an engaging and cohesive digital ecosystem. Its a dynamic fusion of
                     artistry and technical prowess, where every project becomes a canvas for innovation.</p>
                 <div className={'absolute text-7xl right-0 text-primary opacity-20 '}>
                     <FaQuoteRight/>
