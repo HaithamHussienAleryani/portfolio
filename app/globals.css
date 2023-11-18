@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html, body {
+    background-color: rgb(36, 36, 36);
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.social-svg-icon {
+    height: 40px !important;
+    width: 40px !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@layer components {
+    .heroButton {
+        @apply px-4 mx-3 mt-10 py-1
+        uppercase border border-transparent
+        text-xs tracking-widest rounded-full transition-all  duration-300  text-gray-400 cursor-pointer hover:border-primary
+        hover:text-primary
+    }
 }
