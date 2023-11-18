@@ -19,7 +19,7 @@ const Hero = () => {
 
             className={'text-gray-200 mx-auto p-5 h-screen flex flex-col items-center justify-center space-y-8  text-center overflow-hidden  '}>
             <BackgroundCircles/>
-            <img src={'/hero.png'} className={'rounded-full object-cover h-32 w-32 relative'}
+            <img src={'/me.jpg'} className={'rounded-full object-cover h-32 w-32 relative'}
                  alt={'My profile image'}/>
 
 
@@ -33,7 +33,7 @@ const Hero = () => {
                 <Link href="#about">
                     <button className={'heroButton'}>About</button>
                 </Link>
-                <Link href="#experiences">
+                <Link href="#experience">
                     <button className={'heroButton'}>experiences</button>
                 </Link>
                 <Link href="#skills">

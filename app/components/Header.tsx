@@ -3,6 +3,7 @@
 import {motion} from 'framer-motion';
 import React from 'react';
 import {SocialIcon} from "react-social-icons";
+import Link from "next/link";
 
 const Header = () => {
     return (
@@ -32,7 +33,7 @@ const Header = () => {
                             type: 'just',
                         }} className={'flex flex-row  items-center text-gray-300 uppercase cursor-pointer'}>
                 <SocialIcon className={'!h-[3rem]'} network={'email'} fgColor={'gray'} bgColor={'transparent'}/>
-                <p className={'text-gray-400 text-sm hidden md:inline-flex'}>get in touch</p>
+                <Link href='#contact' className={'text-gray-400 text-sm hidden md:inline-flex'}>get in touch</Link>
             </motion.div>
         </header>
     );
