@@ -1,5 +1,6 @@
 "use client";
 import * as React from 'react';
+import Image from "next/image";
 
 type Props = {};
 export const Projects = (props: Props) => {
@@ -32,19 +33,20 @@ export const Projects = (props: Props) => {
                 {
                     projects.map((project, i) => (
                         <div
+                            key={i}
                             className={'w-screen flex-shrink-0 !snap-center flex flex-col  space-y-5 items-center justify-center mx-auto  p-20 md:p-44 h-screen'}>
 
                             <div
                                 className={'flex gap-10 w-full  justify-center items-center space-x-5'}>
                                 {
 
-                                    project.images.map((image) => (
+                                    project.images.map((image, i) => (
                                         image === 'oreint.svg' ?
-                                            <img src={`/${image}`} alt=""
-                                                 className={'h-[200px] md:h-[100px]'}/>
+                                            <Image key={i} src={`/${image}`} alt=""
+                                                   className={'h-[200px] md:h-[100px]'}/>
                                             :
-                                            <img src={`/${image}`} alt=""
-                                                 className={'h-[200px] md:h-[380px]'}/>
+                                            <Image key={i} src={`/${image}`} alt=""
+                                                   className={'h-[200px] md:h-[380px]'}/>
                                     ))
                                 }
                             </div>

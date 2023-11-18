@@ -1,6 +1,7 @@
 // @flow
 import {motion} from 'framer-motion';
 import * as React from 'react';
+import Image from "next/image";
 
 type Props = {};
 export const ExperienceCard = (props: Props) => {
@@ -24,22 +25,22 @@ export const ExperienceCard = (props: Props) => {
 
                 <p className={'text-sm my-4'}>Started 21-7-2021 till now </p>
                 <div className={'grid grid-cols-5 my-3 gap-2'}>
-                    <img src="/github.svg" alt="" className={'w-8 h-8 bg-white rounded-full'}/>
-                    <img src="/html.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/tailwind.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/jquery.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/sql.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/javascript.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/c.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/npm.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/flutter.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/dart.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/sass.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
-                    <img src="/typescript.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
-                    <img src="/dotnet.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
-                    <img src="/next.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
-                    <img src="/react.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
-                    <img src="/bootstrap.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
+                    <Image src="/github.svg" alt="" className={'w-8 h-8 bg-white rounded-full'}/>
+                    <Image src="/html.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/tailwind.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/jquery.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/sql.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/javascript.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/c.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/npm.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/flutter.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/dart.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/sass.svg" alt="" className={'w-8 h-8  bg-white rounded-full'}/>
+                    <Image src="/typescript.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
+                    <Image src="/dotnet.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
+                    <Image src="/next.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
+                    <Image src="/react.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
+                    <Image src="/bootstrap.svg" alt="" className={'w-8 h-8 grayscale  bg-white rounded-full'}/>
                 </div>
                 <ul className={'list-disc text-md mt-10 ml-4 space-y-2 text-left'}>
                     <li>Head of IT department</li>
