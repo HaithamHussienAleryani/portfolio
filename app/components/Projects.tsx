@@ -1,5 +1,6 @@
 "use client";
 import * as React from 'react';
+import Image from "next/image";
 
 type Props = {};
 export const Projects = (props: Props) => {
@@ -41,11 +42,11 @@ export const Projects = (props: Props) => {
 
                                     project.images.map((image, i) => (
                                         image === 'oreint.svg' ?
-                                            <img key={i} src={`/${image}`} alt=""
-                                                 className={'h-[200px] md:h-[100px]'}/>
+                                            <Image key={i} src={`/${image}`} alt=""
+                                                   className={'h-[200px] md:h-[100px]'}/>
                                             :
-                                            <img key={i} src={`/${image}`} alt=""
-                                                 className={'h-[200px] md:h-[380px]'}/>
+                                            <Image key={i} src={`/${image}`} alt=""
+                                                   className={'h-[200px] md:h-[380px]'}/>
                                     ))
                                 }
                             </div>
