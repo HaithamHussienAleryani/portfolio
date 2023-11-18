@@ -32,11 +32,10 @@ const Header = () => {
                             type: 'just',
                         }} className={'flex flex-row  items-center text-gray-300 uppercase cursor-pointer'}>
                 <SocialIcon className={'!h-[3rem]'} network={'email'} fgColor={'gray'} bgColor={'transparent'}/>
-                <p className={'text-gray-400 text-sm hidden md:inline-flex'}>get in touch now</p>
+                <p className={'text-gray-400 text-sm hidden md:inline-flex'}>get in touch</p>
             </motion.div>
         </header>
     );
 };
 
 export default Header;
-
