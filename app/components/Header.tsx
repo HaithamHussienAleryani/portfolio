@@ -14,16 +14,17 @@ const Header = () => {
                 transition={{
                     duration: 1.5,
                     type: 'just',
-                }}
-            >
-                <SocialIcon className={'!h-[2.6rem]'} url="https://twitter.com" fgColor={'gray'}
+                }}>
+                <SocialIcon className={'!h-[2.6rem]'} url="https://x.com/haithamaleryan1" fgColor={'gray'}
                             bgColor={'transparent'}/>
-                <SocialIcon className={'!h-[2.6rem]'} url="https://x.com" fgColor={'gray'} bgColor={'transparent'}/>
-                <SocialIcon className={'!h-[2.6rem]'} url="https://github.com" fgColor={'gray'}
+                <SocialIcon className={'!h-[2.6rem]'} url="https://github.com/HaithamHussienAleryani" fgColor={'gray'}
                             bgColor={'transparent'}/>
-                <SocialIcon className={'!h-[2.6rem]'} url="https://facebook.com" fgColor={'gray'}
+                <SocialIcon className={'!h-[2.6rem]'} url="https://www.facebook.com/haitham.aleryani.1?mibextid=PzaGJu"
+                            fgColor={'gray'}
                             bgColor={'transparent'}/>
-                <SocialIcon className={'!h-[2.6rem]'} url="https://instagram.com" fgColor={'gray'}
+                <SocialIcon className={'!h-[2.6rem]'}
+                            url="https://instagram.com/haitham_aleryani?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"
+                            fgColor={'gray'}
                             bgColor={'transparent'}/>
             </motion.div>
             <motion.div initial={{x: 500, opacity: 0, scale: .5,}}
