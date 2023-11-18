@@ -15,7 +15,7 @@ export const Skills = (props: Props) => {
             <h3 className={'text-2xl tracking-[20px] uppercase text-gray-500 absolute top-24'}>skills</h3>
             <h3 className={'text-sm tracking-[3px] uppercase text-gray-500 absolute top-36'}>hover over a skill to
                 show proficiency</h3>
-            <div className={'grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10'}>
+            <div className={'grid grid-cols-3 md:grid-cols-4 gap-5 mt-40 md:gap-10'}>
                 <Skill image={'github'} percentage={80} directionLeft={true}/>
                 <Skill image={'dotnet'} percentage={80}/>
                 <Skill image={'c'} percentage={90} directionLeft={true}/>

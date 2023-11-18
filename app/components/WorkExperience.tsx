@@ -14,7 +14,7 @@ export const WorkExperience = () => {
             <h3 className={'text-2xl tracking-[20px] uppercase text-gray-500 absolute top-24'}>experience</h3>
 
             <div
-                className={'w-full mt-20 flex space-x-5 overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary p-10 snap-x snap-mandatory'}>
+                className={'w-full mt-20 flex space-x-5 overflow-x-scroll justify-center scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary p-10 snap-x snap-mandatory'}>
                 <ExperienceCard/>
 
             </div>

@@ -42,8 +42,9 @@ export const Contact = (props: Props) => {
                     <p className={'text-xl'}>haithamaleryani00@gmail.com</p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit(onSubmit)} action="" className={'flex flex-col space-y-2 w-fit mx-auto'}>
-                <div className={'flex space-x-2'}>
+            <form onSubmit={handleSubmit(onSubmit)} action=""
+                  className={'flex flex-col space-y-2  !mx-20 md:w-fit md:mx-auto'}>
+                <div className={'flex flex-col md:flex-row md:space-x-2 space-y-2 '}>
                     <input {...register('name')} className={'contact-input'} placeholder='Name' type="text"/>
                     <input {...register('email')} className={'contact-input'} placeholder='Email' type="email"/>
                 </div>

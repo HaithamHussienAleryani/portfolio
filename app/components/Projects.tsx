@@ -1,6 +1,6 @@
 "use client";
+import {motion} from 'framer-motion';
 import * as React from 'react';
-import Image from "next/image";
 
 type Props = {};
 export const Projects = (props: Props) => {
@@ -25,28 +25,31 @@ export const Projects = (props: Props) => {
     return (
         <div
 
-            className={'h-[98%] flex flex-col relative text-center md:text-left md:flex-row w-screen px-10 justify-evenly items-center mx-auto'}>
+            className={'h-[98%] flex flex-col relative text-center  md:flex-row w-screen px-10 justify-evenly items-center mx-auto'}>
             <h3 className={'text-2xl tracking-[20px] uppercase text-gray-500 absolute top-24'}>Projects</h3>
 
-            <div
-                className={'relative w-full  h-fit flex overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary overflow-y-hidden snap-x snap-mandatory z-20'}>
+            <motion.div
+                initial={{y: 200, opacity: 0}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 1.2}}
+                className={'relative w-screen  h-fit flex overflow-x-scroll  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-primary overflow-y-hidden snap-x snap-mandatory z-20'}>
                 {
                     projects.map((project, i) => (
                         <div
                             key={i}
-                            className={'w-screen flex-shrink-0 !snap-center flex flex-col  space-y-5 items-center justify-center mx-auto  p-20 md:p-44 h-screen'}>
+                            className={'w-screen flex-shrink-0 !snap-center flex flex-col  space-y-5  justify-center   p-20 md:p-44 h-screen'}>
 
                             <div
-                                className={'flex gap-10 w-full  justify-center items-center space-x-5'}>
+                                className={'flex gap-4 w-full  justify-center items-center '}>
                                 {
 
                                     project.images.map((image, i) => (
                                         image === 'oreint.svg' ?
-                                            <Image key={i} src={`/${image}`} alt=""
-                                                   className={'h-[200px] md:h-[100px]'}/>
+                                            <img key={i} src={`/${image}`} alt=""
+                                                 className={'h-[200px] md:h-[100px]'}/>
                                             :
-                                            <Image key={i} src={`/${image}`} alt=""
-                                                   className={'h-[200px] md:h-[380px]'}/>
+                                            <img key={i} src={`/${image}`} alt=""
+                                                 className={'h-[200px] md:h-[380px]'}/>
                                     ))
                                 }
                             </div>
@@ -61,12 +64,12 @@ export const Projects = (props: Props) => {
                                             project.title
                                     }
                                 </h4>
-                                <p className={'text-lg text-center md:text-left'}>{project.description}</p>
+                                <p className={'text-lg text-center '}>{project.description}</p>
                             </div>
                         </div>
                     ))
                 }
-            </div>
+            </motion.div>
             <div className={'w-full absolute top-[30%] bg-primary/10 left-0 h-[400px] -skew-y-12 '}></div>
         </div>
     );
